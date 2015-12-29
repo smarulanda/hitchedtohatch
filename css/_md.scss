@@ -1,0 +1,22 @@
+header {
+	nav {
+		ul {
+			li {
+				margin: 0 32px;
+			}
+		}
+	}
+}
+#us-block {
+	#the-couple {
+		#the-bride, #the-groom {
+			width: 100%;
+			float: none;
+			display: block;
+			text-align: center;
+		}
+		#the-bride {
+			margin-bottom: 24px;
+		}
+	}
+}

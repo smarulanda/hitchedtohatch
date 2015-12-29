@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+header, main, footer, article, section, hgroup, nav, figure, aside {
+	display: block;
+}
+figure {
+	margin: 0;
+	padding: 0;
+}
+input[type="image"] {
+	padding: 0;
+	border: none;
+}
+input[type=text], input[type=password], input[type=file], input[type=submit], textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+img {
+	border-style: none;
+}

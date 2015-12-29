@@ -1,0 +1,271 @@
+body {
+	margin: 0;
+	color: $text-color;
+	font: 24px $content-font;
+	background: $text-color;
+	min-width: 320px;
+	&#accept, &#decline {
+		background: $background-color;
+	}
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed $red;
+	color: $red;
+	&:hover {
+		color: darken($red, 10%);
+	}
+}
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+header {
+	background: none;
+	transition: background 1s;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	&.scrolled {
+		background: rgba(255, 255, 255, 0.7);
+	}
+	nav {
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: 16px 0;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 0 48px;
+				a {
+					padding: 2px 6px;
+					color: $text-color;
+					border: none;
+					&:hover {
+						text-decoration: underline;
+						color: $text-color;
+					}
+				}
+			}
+		}
+	}
+}
+main {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+#hero {
+	padding: 58px 0 0;
+	min-height: 600px;
+	@include background-cover("../img/hero.jpg");
+	#hero-box {
+		max-width: 500px;
+		margin: 0 auto;
+		margin-top: 140px;
+		padding: 32px;
+		background: rgba(255, 255, 255, 0.5);
+		#hero-holder {
+			#hero-heading {
+				font-size: 48px;
+				margin: 0;
+				margin-bottom: 10px;
+				font-weight: normal;
+				font-family: $heading-font;
+				letter-spacing: -4px;
+			}
+			#date {
+				font-size: 32px;
+				margin-bottom: 24px;
+				color: $red;
+			}
+			#rsvp-link {
+				display: inline-block;
+				padding: 10px 20px;
+				border: 2px solid $text-color;
+				color: $text-color;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.content-block {
+	background: $background-color;
+	padding: 96px 0;
+	.headline {
+		margin: 0;
+		color: $red;
+		margin-bottom: 16px;
+		font-family: $heading-font;
+		letter-spacing: -2px;
+	}
+}
+.image-block {
+	height: 540px;
+}
+#couple1 { @include background-cover("../img/couple1.jpg"); }
+#couple2 { @include background-cover("../img/couple2.jpg"); }
+#couple3 { @include background-cover("../img/couple3.jpg"); }
+#couple4 { @include background-cover("../img/couple1.jpg"); }
+#us {
+	#the-couple {
+		margin-bottom: 48px;
+		#the-bride, #the-groom {
+			float: left;
+			width: 50%;
+			padding: 0 24px;
+			.role {
+				margin: 0;
+				margin-bottom: 6px;
+				font-family: $heading-font;
+				letter-spacing: -1px;
+				color: $red;
+			}
+			.name {
+				margin: 0;
+				font-weight: normal;
+			}
+		}
+		#the-bride {
+			text-align: right;
+		}
+		#the-groom {
+			text-align: left;
+		}
+	}
+	#story {
+		max-width: $max-width;
+		margin: 0 auto;
+		p {
+			margin-top: 0;
+		}
+	}
+}
+#party {
+	.headline {
+		margin-bottom: 48px;
+	}
+	#party-list {
+		max-width: $max-width;
+		margin: 0 auto;
+		#bridesmaids, #groomsmen {
+			float: left;
+			width: 50%;
+			.name {
+				margin: 0;
+				font-weight: normal;
+			}
+			.role {
+				margin: 0;
+				margin-bottom: 24px;
+				font-family: $heading-font;
+				letter-spacing: -1px;
+				color: $red;
+			}
+			.party-column {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				float: left;
+				width: 50%;
+				li {
+					margin-bottom: 12px;
+				}
+			}
+		}
+	}
+}
+#event {
+	.address-list, .info-list {
+		list-style: none;
+		margin: 0;
+		margin-bottom: 32px;
+		padding: 0;
+		li {
+			margin-bottom: 8px;
+		}
+	}
+}
+#gifts {
+	.gifts-text {
+		max-width: $max-width;
+		margin: 0 auto;
+	}
+	.brand-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin: 16px;
+			a {
+				border: none;
+			}
+		}
+	}
+}
+#rsvp {
+	.headline {
+		margin-bottom: 12px;
+	}
+	#will-you {
+		font-family: $heading-font;
+		letter-spacing: -2px;
+		font-size: 28px;
+		color: $red;
+		margin-bottom: 12px;
+	}
+	#radios {
+		label {
+			margin-right: 12px;
+		}
+	}
+	form {
+		display: none;
+		max-width: 400px;
+		margin: 0 auto;
+		margin-top: 32px;
+		margin-bottom: 32px;
+		input, textarea {
+			width: 100%;
+			margin-bottom: 8px;
+			padding: 12px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			&[type="submit"] {
+				background: $red;
+				color: white;
+				border: none;
+				cursor: pointer;
+				&:hover {
+					background: darken($red, 10%);
+				}
+			}
+			&[name="_gotcha"] {
+				display: none;
+			}
+		}
+	}
+}
+footer {
+	text-align: center;
+	font-size: 16px;
+	padding: 16px;
+	background: $text-color;
+	color: white;
+	a {
+		color: white;
+		border-color: white;
+		&:hover {
+			color: white;
+		}
+	}
+}

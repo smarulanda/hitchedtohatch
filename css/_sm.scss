@@ -1,0 +1,70 @@
+body {
+	font: 18px $content-font;
+}
+header {
+	display: none;
+}
+#hero {
+	padding: 24px 12px;
+	min-height: auto;
+	#hero-box {
+		margin: 0;
+		max-width: 100%;
+		#hero-holder {
+			#hero-heading {
+				font-size: 36px;
+			}
+			#date {
+				font-size: 24px;
+			}
+			#rsvp-link {
+				padding: 8px 16px;
+			}
+		}
+	}
+}
+.content-block {
+	padding: 48px 18px;
+}
+.image-block {
+	height: 300px;
+}
+#us {
+	#the-couple {
+		margin-bottom: 24px;
+		#the-bride, #the-groom {
+			float: none;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 12px;
+			.role {
+				margin: 0;
+				margin-bottom: 6px;
+				font-family: $heading-font;
+				letter-spacing: -1px;
+				color: $red;
+			}
+			.name {
+				margin: 0;
+				font-weight: normal;
+			}
+		}
+	}
+}
+#party {
+	.headline {
+		margin-bottom: 24px;
+	}
+	#party-list {
+		#bridesmaids, #groomsmen {
+			float: none;
+			width: 100%;
+			margin-bottom: 16px;
+		}
+	}
+}
+#rsvp {
+	#will-you {
+		font-size: 24px;
+	}
+}
