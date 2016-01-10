@@ -85,7 +85,7 @@ main {
 #hero {
   padding: 58px 0 0;
   min-height: 600px;
-  background-image: url("../img/hero.jpg");
+  background-image: url("//hitchedtohatch.s3.amazonaws.com/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
@@ -128,25 +128,25 @@ main {
   height: 540px; }
 
 #couple1 {
-  background-image: url("../img/couple1.jpg");
+  background-image: url("//hitchedtohatch.s3.amazonaws.com/couple1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
 
 #couple2 {
-  background-image: url("../img/couple2.jpg");
+  background-image: url("//hitchedtohatch.s3.amazonaws.com/couple2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
 
 #couple3 {
-  background-image: url("../img/couple3.jpg");
+  background-image: url("//hitchedtohatch.s3.amazonaws.com/couple3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
 
 #couple4 {
-  background-image: url("../img/couple1.jpg");
+  background-image: url("//hitchedtohatch.s3.amazonaws.com/couple4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
@@ -201,6 +201,17 @@ main {
       width: 50%; }
       #party #party-list #bridesmaids .party-column li, #party #party-list #groomsmen .party-column li {
         margin-bottom: 12px; }
+#party #flowergirl {
+  margin-top: 32px; }
+  #party #flowergirl .name {
+    margin: 0;
+    font-weight: normal; }
+  #party #flowergirl .role {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: -1px;
+    color: #b64926; }
 
 #event .address-list, #event .info-list {
   list-style: none;
@@ -209,6 +220,9 @@ main {
   padding: 0; }
   #event .address-list li, #event .info-list li {
     margin-bottom: 8px; }
+    #event .address-list li a, #event .info-list li a {
+      color: #2a232b;
+      border-color: #2a232b; }
 
 #gifts .gifts-text {
   max-width: 1000px;
@@ -272,12 +286,12 @@ footer {
   header nav ul li {
     margin: 0 32px; }
 
-  #us-block #the-couple #the-bride, #us-block #the-couple #the-groom {
+  #us #the-couple #the-bride, #us #the-couple #the-groom {
     width: 100%;
     float: none;
     display: block;
     text-align: center; }
-  #us-block #the-couple #the-bride {
+  #us #the-couple #the-bride {
     margin-bottom: 24px; } }
 @media (max-width: 760px) {
   body {

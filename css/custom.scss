@@ -64,7 +64,7 @@ main {
 #hero {
 	padding: 58px 0 0;
 	min-height: 600px;
-	@include background-cover("../img/hero.jpg");
+	@include background-cover("//hitchedtohatch.s3.amazonaws.com/hero.jpg");
 	#hero-box {
 		max-width: 500px;
 		margin: 0 auto;
@@ -111,10 +111,10 @@ main {
 .image-block {
 	height: 540px;
 }
-#couple1 { @include background-cover("../img/couple1.jpg"); }
-#couple2 { @include background-cover("../img/couple2.jpg"); }
-#couple3 { @include background-cover("../img/couple3.jpg"); }
-#couple4 { @include background-cover("../img/couple1.jpg"); }
+#couple1 { @include background-cover("//hitchedtohatch.s3.amazonaws.com/couple1.jpg"); }
+#couple2 { @include background-cover("//hitchedtohatch.s3.amazonaws.com/couple2.jpg"); }
+#couple3 { @include background-cover("//hitchedtohatch.s3.amazonaws.com/couple3.jpg"); }
+#couple4 { @include background-cover("//hitchedtohatch.s3.amazonaws.com/couple4.jpg"); }
 #us {
 	#the-couple {
 		margin-bottom: 48px;
@@ -182,6 +182,20 @@ main {
 			}
 		}
 	}
+	#flowergirl {
+		margin-top: 32px;
+		.name {
+			margin: 0;
+			font-weight: normal;
+		}
+		.role {
+			margin: 0;
+			margin-bottom: 24px;
+			font-family: $heading-font;
+			letter-spacing: -1px;
+			color: $red;
+		}
+	}
 }
 #event {
 	.address-list, .info-list {
@@ -191,6 +205,10 @@ main {
 		padding: 0;
 		li {
 			margin-bottom: 8px;
+			a {
+				color: $text-color;
+				border-color: $text-color;
+			}
 		}
 	}
 }
